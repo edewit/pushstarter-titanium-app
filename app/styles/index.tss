@@ -1,0 +1,26 @@
+".header": {
+	backgroundColor: '#ff9800',
+	height: '100px'
+},
+
+".headerLabel": {
+	color: '#fff',
+	font: {
+		fontSize: 20,
+		fontWeight: 'bold',
+		fontFamily: 'Roboto'
+	},
+	left: '16px'
+}
+
+"#indicator": {
+    color: '#000',
+    indicatorColor: '#ff9800',
+    message: 'Registering...',
+    font: {fontSize:13, fontFamily: 'Roboto'}    
+}
+
+'.leftAlign': {
+	left: '16px'
+}
+

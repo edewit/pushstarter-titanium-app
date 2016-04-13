@@ -1,0 +1,33 @@
+<Alloy>
+	<Window id="win">
+		<View class="header" top="0">
+			<Label class="headerLabel">Notifications</Label>
+		</View>
+		<ActivityIndicator id="indicator"/>
+	</Window>
+	<Window id="empty">
+		<View class="header" top="0">
+			<Label class="headerLabel">Notifications</Label>
+		</View>
+		<View layout="vertical" height="Titanium.UI.SIZE">
+			<ImageView image="/ic_notifications.png"/>
+			<Label text="Nothing here yet."/>
+			<Label text="Send notifications from the console."/>						
+		</View>
+	</Window>
+	<Window id="main">
+		<ListView defaultItemTemplate="template">
+			<HeaderView>
+				<View class="header">
+					<Label class="headerLabel">Notifications</Label>
+				</View>
+			</HeaderView>
+			<Templates>
+				<ItemTemplate name="template">
+					<Label id="label" bindId="label" class="leftAlign"/>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="section"/>
+		</ListView>
+	</Window>
+</Alloy>
